@@ -1,13 +1,7 @@
-/* CSS files add styling rules to your content */
-
-container {
-  postiion: relative;
-  margin: 40px;
-  padding: 120px;
-  }
 body {
   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
-  margin: 140px;
+  position: relative;
+  margin: 80px;
   text-align: center;
   padding: 10px;
   border: 10px;
@@ -38,4 +32,11 @@ border-radius: 7px;
 #footer {
 font-size: 8px;
   color: grey;
+}
+
+#outcome {
+  color: #e62739;
+  font-size: 24px;
+  font-weight: bold;
+  font-style: italic;
 }
