@@ -1,0 +1,43 @@
+/* Styling for V2 - 1 */
+
+body {
+  font-family: 'Butterfly Kids', cursive;
+  height: 80vh;
+  display: flex;
+  margin: 2em;
+}
+
+.animal-game {
+    width: 640px;
+    height: 640px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+   }
+
+.animal-questions {
+    width: 100%;
+    height: 100%;
+    margin: 5px;
+    position: relative;    
+}
+
+img {
+ border-radius: 10px;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 4em;
+  color: #373fff;
+}
+
+p {
+  font-size: 2.5em;
+}
+
+#hideThis {
+ display: none;
+}
+
