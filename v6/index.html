@@ -1,29 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Do you know your Animals?</title>
+    <title>Spangles Animals II</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
   
 <!-- import the webpage's stylesheet -->
-<link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/style.css">
+<!-- import google font -->
+    <link href="https://fonts.googleapis.com/css?family=Butterfly+Kids" rel="stylesheet">
+    
 <!-- import the webpage's javascript file -->
-<script src="/script.js" defer></script>
-<!--   <body>
-    
-    <container> -->
-      <h1>Do you know your animals?</h1>
-        <h2>Test yourself with this simple game made in Glitch with HTML & CSS & a bit of interactive JavaScript</h2> <br>
-        <h3>Click Start Game button to begin!</h3>
-          <div> 
-          <button id="startButton" onclick="questionOne()">Start Game</button>
-          </div>
-      <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
-    </container>
-    
-  <footer id="footer">Copyright Dan Bad Robot</footer>
-<script src="https://button.glitch.me/button.js"></script>  
-  </body>  
+    <script src="/script.js" defer></script>
+    </head>  
+    <body>
+<!-- defining the overall game shape -->
+    <section class="animal-game">
+      <div class="animal-questions">
+        <h1>Spangles Animals</h1>  
+        <p>Test your general knowledge of animals.</p>
+        
+<!--- Start Button -->
+        <div id="startButton">  
+          <button onclick="ask()">Start the questions!</button>
+        </div><br>
+        
+<!-- Form Questions -->        
+        
+            <form id="cow" onsubmit="answer('cow');"><p>What goes MOOO?</p>
+              <input type="type" id="cowAnswer"><input type="submit" value="Submit"></form>
+        
+            <form id="sheep" onsubmit="answer('sheep');"><p>What sound does a sheep make?</p>
+              <input type="text" id="sheepAnswer"><input type="submit" value="Submit"></form>
+        
+            <form id="pig" onsubmit="answer('pig')"><p>What do pigs say?</p>
+               <input type="text" id="pigAnswer"><input type="submit" value="Submit"></form>
+
+        <!-- Animal images -->                 
+
+          <img id = "cowimg" src="https://cdn.glitch.com/82eb9a75-5d41-46e6-b100-4b52fa657ea7%2Fbrown-cow.jpg?1534929779301" alt="this is a cow"><br/>
+          <img id = "sheepimg" src="https://cdn.glitch.com/82eb9a75-5d41-46e6-b100-4b52fa657ea7%2Fbrown-cow.jpg?1534929779301" alt="this is a sheep"><br/>
+          <img id = "pigimg" src="https://cdn.glitch.com/82eb9a75-5d41-46e6-b100-4b52fa657ea7%2Fbrown-cow.jpg?1534929779301" alt="this is a pig"><br/>
+        
+        
+      </div><!--end of div class animal-questions-->
+    </section>
+  </body>
 </html>
+
+ <!--
+
+        Game objective - create an animal knowledge guessing game with cards that are hidden until the correct answer is guessed.
+
+        Game Requirements:
+
+          Create a question and answer based game that tests users general knowledge of basic animals.
+
+          Should not use prompts to ask questions
+
+          Should have styled input box for user input
+
+          Should reveal a styled image on every correct answer
+
+          Should hide an image after 1500s and reveal a new question
+
+          Should cater for capitalised or non capitalised or cameCase user input
+
+
+        -->
